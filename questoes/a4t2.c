@@ -8,7 +8,7 @@ int main(){
 
   printf("Digite o preço do produto: ");
   scanf("%f", &preco);
-  printf("\nDigite a condição de pagamento: "); //problema aqui
+  printf("\nDigite a condição de pagamento: ");
   scanf(" %c", &condicao);
   
   switch(condicao){
