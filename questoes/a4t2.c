@@ -8,8 +8,9 @@ int main(){
 
   printf("Digite o preço do produto: ");
   scanf("%f", &preco);
-  printf("Digite a condição de pagamento: "); //problema aqui
-  scanf("%c", &condicao);
+  printf("\nDigite a condição de pagamento: "); //problema aqui
+  scanf(" %c", &condicao);
+  
   switch(condicao){
     case '1': resultado = preco * 0.9; break;
     case '2': resultado = preco * 0.95; break;
