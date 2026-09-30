@@ -24,7 +24,7 @@ int main() {
 return 0;
 }
 
-void grau(float *final){
+void grau(){
   
   int ordem;
   float inicial;
