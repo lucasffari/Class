@@ -27,7 +27,7 @@ return 0;
 void grau(){
   
   int ordem;
-  float inicial;
+  float inicial, final;
   
   printf("\n\nQual a unidade de origem?\n\n1) Graus\n2) Radianos");
   printf("\n\nSelecione uma opcao: ");
@@ -36,14 +36,14 @@ void grau(){
     case 1:
       printf("Digite o valor em Graus: ");
       scanf("%f", &inicial);
-      *final = (inicial / 180) * pi;
-      printf("Valor em Radianos: %.2f", *final);
+      final = (inicial / 180) * pi;
+      printf("Valor em Radianos: %.2f", final);
       return;
     case 2:
       printf("Digite o valor em Radianos: ");
       scanf("%f", &inicial);
-      *final = (inicial * 180) / pi;
-      printf("Valor em Graus: %.2f", *final);
+      final = (inicial * 180) / pi;
+      printf("Valor em Graus: %.2f", final);
       return;
       }
 }
