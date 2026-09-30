@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define pi 3.1415
+#define pi 3.141593
 
 void grau();
 void tempe();
@@ -54,7 +54,7 @@ void tempe(){
   float C, F, K;
   
   printf("\n\nQual a unidade de origem?\n\n1) Celsius\n2) Fahrenheit\n3) Kelvin");
-  printf("\n\nSelecione uma opcao: ");
+  printf("\n\nSelecione uma opcao: \n");
   scanf("%d", &origem);
   switch(origem){
     case 1:
@@ -62,24 +62,24 @@ void tempe(){
       scanf("%f", &C);
       K = C + 273.15;
       F = (C*1.8) + 32;
-      printf("Valor em Fahrenheit: %.2f\n", F);
-      printf("Valor em Kelvin: %.2f\n", K);
+      printf("\nValor em Fahrenheit: %.2f\n", F);
+      printf("\nValor em Kelvin: %.2f\n", K);
       return;
     case 2:
       printf("Digite o valor em Fahrenheit: ");
       scanf("%f", &F);
       C = (F - 32) / 1.8;
       K = C + 273.15;
-      printf("Valor em Celsius: %.2f\n", F);
-      printf("Valor em Kelvin: %.2f\n", K);
+      printf("\nValor em Celsius: %.2f\n", C);
+      printf("\nValor em Kelvin: %.2f\n", K);
       return;
     case 3:
       printf("Digite o valor em Kelvin: ");
-      scanf("%f", &C);
+      scanf("%f", &K);
       C = K - 273.15;
       F = (C*1.8) + 32;
-      printf("Valor em Fahrenheit: %.2f\n", F);
-      printf("Valor em Celsius: %.2f\n", K);
+      printf("\nValor em Celsius: %.2f\n", C);
+      printf("\nValor em Fahrenheit: %.2f\n", F);
       return;
     }
 }       
